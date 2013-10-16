@@ -85,7 +85,7 @@ public class FraccionTest {
 	@Test
 	public void testMenor() {
 		Fraccion f1 = new Fraccion(1, 3);
-		assertTrue(this.fraccion.mayor(f1));
+		assertTrue(this.fraccion.menor(f1));
 	}
 
 }
