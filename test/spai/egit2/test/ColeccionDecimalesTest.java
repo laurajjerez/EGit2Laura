@@ -25,5 +25,28 @@ public class ColeccionDecimalesTest {
     public void testMayor() {
         assertEquals(3.4, this.numeros.mayor(), 1e-10);
     }
+    
+//    public double media(){...}
+//    public int tamano(){...}   
+    
+    @Test
+    public void testRestar(){
+    	assertEquals(-3.4, numeros.restar(), 1e-10);
+    }
+    
+    @Test
+    public void testMultiplicar(){
+    	assertEquals(4.896, numeros.multiplicar(), 1e-10);
+    }
+    
+    @Test
+    public void testMedia(){
+    	assertEquals(1.9333, numeros.multiplicar(), 1e-10);
+    }
+    
+    @Test
+    public void testTamano(){
+    	assertEquals(3, numeros.tamano());
+    }
 
 }
