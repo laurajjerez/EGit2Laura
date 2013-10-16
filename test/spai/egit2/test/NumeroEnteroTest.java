@@ -47,5 +47,32 @@ public class NumeroEnteroTest {
         this.numero.decrementar();
         assertEquals(-1, numero.getValor());
     }
-
+    
+//    public int restar(int resultado){...} 
+//    public int multiplicar(int resultado){...}  
+//    public int dividir(int resultado){...} 
+    
+    @Test
+    public void testSumar(){
+    	numero = new NumeroEntero(10);
+    	assertEquals(12, numero.sumar(2));
+    }
+    
+    @Test
+    public void testRestar(){
+    	numero = new NumeroEntero(8);
+    	assertEquals(5, numero.restar(3));
+    }
+    
+    @Test
+    public void testMultiplicar(){
+    	numero = new NumeroEntero(8);
+    	assertEquals(16, numero.multiplicar(2));
+    }
+    
+    @Test
+    public void testDividir(){
+    	numero = new NumeroEntero(20);
+    	assertEquals(10, numero.dividir(2));
+    }
 }

@@ -31,4 +31,20 @@ public class NumeroEntero {
         this.valor--;
     }
 
+	public int sumar(int i) {
+		return -1;
+	}
+
+	public int restar(int i) {
+		return -1;
+	}
+
+	public int multiplicar(int i) {
+		return -1;
+	}
+
+	public int dividir(int i) {
+		return -1;
+	}
+
 }
