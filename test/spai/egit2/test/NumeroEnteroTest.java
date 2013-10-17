@@ -48,11 +48,12 @@ public class NumeroEnteroTest {
         assertEquals(-1, numero.getValor());
     }
     
+    
     @Test
     public void testSumar() {
         assertEquals(180, this.numero.sumar(80));
     }
-     
+       
     @Test
     public void testRestar() {
         assertEquals(20, this.numero.restar(80));
@@ -67,5 +68,4 @@ public class NumeroEnteroTest {
     public void testDividir() {
         assertEquals(25, this.numero.dividir(4));
     }
-    
 }

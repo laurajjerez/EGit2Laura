@@ -30,15 +30,15 @@ public class NumeroEntero {
     public void decrementar() {
         this.valor--;
     }
-    
-    public int sumar(int sumando) {
+    public int sumar(int sumar) {
         return 0;
     }
 
-    public int restar(int restando) {
+    public int restar(int restar) {
         return 0;
     }
-	
+
+    
     public int multiplicar(int multiplicar) {
         return 0;
     }
@@ -46,5 +46,4 @@ public class NumeroEntero {
     public int dividir(int dividir) {
         return 0;
     }
-	
 }
