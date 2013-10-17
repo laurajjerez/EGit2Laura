@@ -1,3 +1,4 @@
+
 package spai.egit2;
 
 /**
@@ -63,24 +64,28 @@ public class Fraccion {
 		this.denominador = denominador;
 	}
 
-    public double decimal() {
-        return (double) numerador / denominador;
-    }
-    
-    public boolean isPropia(){
-    	return this.getNumerador()<this.getDenominador();
-    }
-    
-    public boolean isImpropia(){
-    	return this.getNumerador()>this.getDenominador();
-    }
+	public double decimal() {
+		return (double) numerador / denominador;
+	}
+
+	public boolean isPropia() {
+		return true;
+	}
+
+	public boolean isImpropia() {
+		return true;
+	}
 
 	public Fraccion sumar(Fraccion fraccion) {
-		return null;
+		this.numerador=(this.numerador*fraccion.denominador) + (this.denominador*fraccion.numerador);
+		this.denominador=this.denominador*fraccion.denominador;
+		return this;
 	}
 
 	public Fraccion restar(Fraccion fraccion) {
-		return null;
+		this.numerador=(this.numerador*fraccion.denominador) - (this.denominador*fraccion.numerador);
+		this.denominador=this.denominador*fraccion.denominador;
+		return this;
 	}
 
 	public boolean mayor(Fraccion fraccion) {
@@ -90,4 +95,5 @@ public class Fraccion {
 	public boolean menor(Fraccion fraccion) {
 		return ((double) this.numerador / (double) this.denominador) > ((double) fraccion.numerador / (double) fraccion.denominador);
 	}
+
 }
