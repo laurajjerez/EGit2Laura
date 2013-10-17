@@ -1,4 +1,3 @@
-
 package spai.egit2;
 
 /**
@@ -12,22 +11,22 @@ package spai.egit2;
  * producto de medios
  * 
  * Las fracciones irreducibles son aquellas que no se pueden simplificar, esto
- * sucede cuando el numerador y el denominador son primos entre sí
+ * sucede cuando el numerador y el denominador son primos entre sï¿½
  * 
- * Reducir varias fracciones a común denominador consiste en convertirlas en
+ * Reducir varias fracciones a comï¿½n denominador consiste en convertirlas en
  * otras equivalentes que tengan el mismo denominador
  * 
  * Comparar fracciones
  * 
- * Suma fracciones: En primer lugar se reducen los denominadores a común
+ * Suma fracciones: En primer lugar se reducen los denominadores a comï¿½n
  * denominador, y se suman o se restan los numeradores de las fracciones
  * equivalentes obtenidas
  * 
- * Multiplicación: La multiplicación de dos fracciones es otra fracción que
+ * Multiplicaciï¿½n: La multiplicaciï¿½n de dos fracciones es otra fracciï¿½n que
  * tiene: Por numerador el producto de los numeradores. Por denominador el
  * producto de los denominadores.
  * 
- * La división de dos fracciones es otra fracción que tiene: Por numerador el
+ * La divisiï¿½n de dos fracciones es otra fracciï¿½n que tiene: Por numerador el
  * producto de los extremos. Por denominador el producto de los medios. Invertir
  * fraccion
  * 
@@ -64,17 +63,17 @@ public class Fraccion {
 		this.denominador = denominador;
 	}
 
-	public double decimal() {
-		return (double) numerador / denominador;
-	}
-
-	public boolean isPropia() {
-		return true;
-	}
-
-	public boolean isImpropia() {
-		return true;
-	}
+    public double decimal() {
+        return (double) numerador / denominador;
+    }
+    
+    public boolean isPropia(){
+    	return this.getNumerador()<this.getDenominador();
+    }
+    
+    public boolean isImpropia(){
+    	return this.getNumerador()>this.getDenominador();
+    }
 
 	public Fraccion sumar(Fraccion fraccion) {
 		return null;
@@ -85,11 +84,10 @@ public class Fraccion {
 	}
 
 	public boolean mayor(Fraccion fraccion) {
-		return false;
+		return ((double) this.numerador / (double) this.denominador) < ((double) fraccion.numerador / (double) fraccion.denominador);
 	}
 
 	public boolean menor(Fraccion fraccion) {
-		return false;
+		return ((double) this.numerador / (double) this.denominador) > ((double) fraccion.numerador / (double) fraccion.denominador);
 	}
-
 }

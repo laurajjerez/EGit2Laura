@@ -1,3 +1,4 @@
+
 package spai.egit2;
 
 import java.util.ArrayList;
@@ -34,4 +35,17 @@ public class ColeccionDecimales {
         return mayor;
     }
 
+	public double restar() {
+		return -1;
+	}
+
+	public double multiplicar() {
+		return -1;
+	}
+
+	public int tamano() {
+		return -1;
+	}
+
 }
+
