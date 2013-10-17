@@ -49,7 +49,6 @@ public class Persona {
         return this.nombre.substring(0, 1) + ".";
     }
 
-	
-    
+	 
 
 }
