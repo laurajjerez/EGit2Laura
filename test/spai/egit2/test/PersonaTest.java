@@ -12,7 +12,7 @@ public class PersonaTest {
 
     @Before
     public void initObjects() {
-        this.persona = new Persona("Ana ", "Vega");
+        this.persona = new Persona("Ana ", "Vega","Peña");
     }
 
     @Test
@@ -30,7 +30,12 @@ public class PersonaTest {
     public void testGetApellido() {
         assertEquals("Vega", this.persona.getApellido());
     }
- 
+    
+    @Test
+    public void testGetSegundoApellido(){
+    	assertEquals("Peña", this.persona.getSegundoApellido());
+    }
+
     @Test
     public void testSetApellido() {
         this.persona.setApellido("  vega  ");
@@ -44,7 +49,7 @@ public class PersonaTest {
 
     @Test
     public void testNombreCompleto() {
-        assertEquals("Ana Vega", this.persona.nombreCompleto());
+        assertEquals("Ana Vega Peña", this.persona.nombreCompleto());
     }
 
 }
