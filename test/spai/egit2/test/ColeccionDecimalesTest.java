@@ -26,9 +26,6 @@ public class ColeccionDecimalesTest {
         assertEquals(3.4, this.numeros.mayor(), 1e-10);
     }
     
-//    public double media(){...}
-//    public int tamano(){...}   
-    
     @Test
     public void testRestar(){
     	assertEquals(-3.4, numeros.restar(), 1e-10);
