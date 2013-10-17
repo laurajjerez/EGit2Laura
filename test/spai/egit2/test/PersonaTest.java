@@ -30,7 +30,7 @@ public class PersonaTest {
     public void testGetApellido() {
         assertEquals("Vega", this.persona.getApellido());
     }
-
+ 
     @Test
     public void testSetApellido() {
         this.persona.setApellido("  vega  ");
