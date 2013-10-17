@@ -14,6 +14,7 @@ public class Persona {
     public Persona(String nombre, String apellido,  String segundoApellido) {
         this.setNombre(nombre);
         this.setApellido(apellido);
+        this.setSegundoApellido(segundoApellido);
     }
 
     public String getNombre() {
@@ -32,22 +33,23 @@ public class Persona {
         this.apellido = this.format(apellido);
     }
 
+    public String getSegundoApellido() {
+        return segundoApellido;
+    }
+
+    public void setSegundoApellido(String segundoApellido) {
+        this.segundoApellido = this.format(segundoApellido);
+    }
+    
     public String nombreCompleto() {
-        return this.nombre + " " + this.apellido;
+        return this.nombre + " " + this.apellido + " " + this.segundoApellido;
     }
 
     public String inicial() {
         return this.nombre.substring(0, 1) + ".";
     }
 
-	public String getSegundoApellido() {
-		return "";
-	}
-
-	public void setSegundoApellido(String segundoApellido) {
-		
-	}
-    
+	
     
 
 }
