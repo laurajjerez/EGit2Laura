@@ -38,7 +38,7 @@ public class ColeccionDecimalesTest {
     
     @Test
     public void testMedia(){
-    	assertEquals(1.9333, numeros.multiplicar(), 1e-10);
+    	assertEquals(1.9333, numeros.media(), 1e-3);
     }
     
     @Test
