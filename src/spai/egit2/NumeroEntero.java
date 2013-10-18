@@ -31,31 +31,20 @@ public class NumeroEntero {
         this.valor--;
     }
     
-    public void sumar() {    }
+    public int sumar(int sumando) {
+        return 0;
+    }
 
-	public double getSumar(int d, int e) {
-			// TODO Auto-generated method stub
-			return 0;
-	}
+    public int restar(int restando) {
+        return 0;
+    }
 	
-	public void restar() {    }
+    public int multiplicar(int multiplicar) {
+        return 0;
+    }
 
-	public double getRestar(int d, int e) {
-			// TODO Auto-generated method stub
-			return 0;
-	}
+    public int dividir(int dividir) {
+        return 0;
+    }
 	
-	public void multiplicar() {    }
-
-	public double getMultiplicar(int d, int e) {
-			// TODO Auto-generated method stub
-			return 0;
-	}
-
-	public void dividir() {    }
-
-	public double getDividir(int d, int e) {
-			// TODO Auto-generated method stub
-			return 0;
-		}
 }
