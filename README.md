@@ -27,3 +27,5 @@ Mirar en la [wiki][] del proyecto
 *&copy;Jesús Bernal Bermúdez*.
 
 [wiki]:https://github.com/miw-upm/EGit2/wiki
+
+Modificaci�n en README para comprobar el correcto funcionamiento de travis.
