@@ -51,22 +51,21 @@ public class NumeroEnteroTest {
     
     @Test
     public void testSumar() {
-    	assertEquals(4, numero.getSumar(5, 1), 1e-6);
-    	}   
-    
-
+        assertEquals(180, this.numero.sumar(80));
+    }
+       
     @Test
     public void testRestar() {
-    assertEquals(4, numero.getRestar(5, 1), 1e-6);
-    }    
+        assertEquals(20, this.numero.restar(80));
+    }
     
     @Test
     public void testMultiplicar() {
-    assertEquals(5, numero.getMultiplicar(5, 1), 1e-6);
+        assertEquals(200, this.numero.multiplicar(2));
     }
     
     @Test
     public void testDividir() {
-    assertEquals(2, numero.getDividir(4, 2), 1e-6);
+        assertEquals(25, this.numero.dividir(4));
     }
 }

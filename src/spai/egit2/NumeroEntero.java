@@ -30,32 +30,20 @@ public class NumeroEntero {
     public void decrementar() {
         this.valor--;
     }
+    public int sumar(int sumar) {
+        return 0;
+    }
+
+    public int restar(int restar) {
+        return 0;
+    }
+
     
-    public void sumar() {    }
+    public int multiplicar(int multiplicar) {
+        return 0;
+    }
 
-	public double getSumar(int d, int e) {
-			// TODO Auto-generated method stub
-			return 0;
-	}
-	
-	public void restar() {    }
-
-	public double getRestar(int d, int e) {
-			// TODO Auto-generated method stub
-			return 0;
-	}
-	
-	public void multiplicar() {    }
-
-	public double getMultiplicar(int d, int e) {
-			// TODO Auto-generated method stub
-			return 0;
-	}
-
-	public void dividir() {    }
-
-	public double getDividir(int d, int e) {
-			// TODO Auto-generated method stub
-			return 0;
-		}
+    public int dividir(int dividir) {
+        return 0;
+    }
 }
